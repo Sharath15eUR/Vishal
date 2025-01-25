@@ -1,0 +1,9 @@
+Module1 Question3:
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ mkdir -p dir1/dir2
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ touch dir1/dir2/file
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ ln -s dir1/dir2/file dir1/link_to_file
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ ls -l dir1
+total 4
+drwxrwxr-x 2 vishalraja vishalraja 4096 Jan 25 14:32 dir2
+lrwxrwxrwx 1 vishalraja vishalraja   14 Jan 25 14:34 link_to_file -> dir1/dir2/file
+

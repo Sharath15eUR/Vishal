@@ -1,0 +1,6 @@
+Module1 Question2:
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ touch mod1ques2
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ chmod g-w mod1ques2
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ ls -l mod1ques2
+-rw-r--r-- 1 vishalraja vishalraja 0 Jan 25 14:21 mod1ques2
+

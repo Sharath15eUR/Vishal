@@ -1,0 +1,10 @@
+Module 1 Question1:
+Create a file and add executable permission to all users (user, group and others)
+vishalraja@vishalraja:/home$ cd /home/vishalraja/Desktop
+vishalraja@vishalraja:~/Desktop$ mkdir vishalmodule1
+vishalraja@vishalraja:~/Desktop$ cd vishalmodule1
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ touch mod1ques1
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ chmod +x mod1ques1
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ ls -l mod1ques1
+-rwxrwxr-x 1 vishalraja vishalraja 0 Jan 25 14:08 mod1ques1
+

@@ -1,0 +1,16 @@
+Module1 question5:
+vishalraja@vishalraja:~$ cd /home/vishalraja/Desktop
+vishalraja@vishalraja:~/Desktop$ cd vishalmodule1
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ mkdir mod1ques5
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ cd mod1ques5
+vishalraja@vishalraja:~/Desktop/vishalmodule1/mod1ques5$ touch file1 file2 file3
+vishalraja@vishalraja:~/Desktop/vishalmodule1/mod1ques5$ touch -t 202501240905 file1
+vishalraja@vishalraja:~/Desktop/vishalmodule1/mod1ques5$ touch -t 202501240906 file2
+vishalraja@vishalraja:~/Desktop/vishalmodule1/mod1ques5$ touch -t 202501240907 file3
+vishalraja@vishalraja:~/Desktop/vishalmodule1/mod1ques5$ cd
+vishalraja@vishalraja:~$ cd Desktop/vishalmodule1
+vishalraja@vishalraja:~/Desktop/vishalmodule1$ ls -lt mod1ques5
+total 0
+-rw-rw-r-- 1 vishalraja vishalraja 0 Jan 24 09:07 file3
+-rw-rw-r-- 1 vishalraja vishalraja 0 Jan 24 09:06 file2
+-rw-rw-r-- 1 vishalraja vishalraja 0 Jan 24 09:05 file1
