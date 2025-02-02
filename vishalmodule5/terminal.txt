@@ -1,0 +1,36 @@
+vishalraja@vishalraja:~/Desktop/vishal/Vishal$ mkdir vishalmodule5
+vishalraja@vishalraja:~/Desktop/vishal/Vishal$ cd vishalmodule5
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ mkdir logs
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ cd logs
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5/logs$ touch file1.txt file2.txt file3.txt
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5/logs$ cat >> file1.txt
+this is text file 1
+^Z
+[1]+  Stopped                 cat >> file1.txt
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5/logs$ cat >> file2.txt
+this text file 2^Z
+[2]+  Stopped                 cat >> file2.txt
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5/logs$ cat >> file3.txt
+this is text file 3^Z
+[3]+  Stopped                 cat >> file3.txt
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5/logs$ cd ..
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ nano file_analyzer.sh
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ chmod u+x file_analyzer.sh
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ ./file_analyzer.sh
+Error: Missing keyword
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ ./file_analyzer.sh --help
+Usage: ./file_analyzer.sh [OPTIONS]
+
+Options:
+  -d <directory>  Search recursively for a keyword in a directory.
+  -k <keyword>    Keyword to search for.
+  -f <file>       Search for a keyword in a specific file.
+  --help          Display this help message.
+
+Examples:
+  ./file_analyzer.sh -d logs -k error   # Search 'error' in 'logs' directory.
+  ./file_analyzer.sh -f script.sh -k TODO  # Search 'TODO' in 'script.sh'.
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ ./file_analyzer.sh -f logs/file1.txt -k  file
+Match found in: logs/file1.txt
+vishalraja@vishalraja:~/Desktop/vishal/Vishal/vishalmodule5$ 
+
