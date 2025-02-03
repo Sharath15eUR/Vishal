@@ -1,0 +1,13 @@
+cd vishalmodule2
+cp Desktop/larger_files.txt larger_files.txt
+ls
+cd Desktop
+find . -type f -size +1M>larger_files.txtcat larger_files.txt
+sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+echo "server=localhost" > config.txt
+sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+cat >>  log.txt
+grep "ERROR" log.txt | grep -v "DEBUG" > filtered_log.txt
+cat filtered_log.txt
+ip route | awk '/default/ {print $3}' | sort -u
+10.0.2.2
